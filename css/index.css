@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+:root {
+  --dark-gray: #7e95a0;
+  --gray: #2e4756;
+  --turquoise: #3cc4bf;
+  --yellow: #f2b147;
+  --light-gray: #d3d3d3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.todolist > h1 {
+    font-size: 3em;
+    font-weight: 900;
+    padding: 20px;
+}
+
+.todolist > input {
+    padding: 10px;
+    font-size: .8em;
+    border: 1px solid #000000;
+}
+
+.todolist > button {
+    cursor: pointer !important;
+    padding: 9px;
+    background-color: #f0f0f0;
+    border: 1px solid #000000;
+    font-weight: 500;
+}
+
+.todolist > button:hover {
+    background-color: #3cc4c093;
+}
+
+.todolist > button:active {
+    background-color: #3cc4bf;
+}
+
+.todolist > #todo-lists {
+    font-size: 1.1em;
+    padding: 15px;
+    text-align: center;
+    margin-left: 10px;
+    list-style: decimal !important;
+}
+
+.todolist > #todo-lists > li {
+    padding: 2.4px;
+}
