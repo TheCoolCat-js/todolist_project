@@ -38,6 +38,10 @@ body {
     border: 1px solid #000000;
 }
 
+.todolist > input:focus {
+    outline: none;
+}
+
 .todolist > button {
     cursor: pointer !important;
     padding: 9px;
@@ -63,5 +67,21 @@ body {
 }
 
 .todolist > #todo-lists > li {
-    padding: 2.4px;
+    font-size: 1.1em;
+    padding: 3.2px;
+    transition: all 0.3s ease;
+}
+
+#todo-lists > li > i:nth-child(1) {
+    cursor: pointer !important;
+    color: red;
+    font-size: 1.2em;
+    padding-left: 20px;
+}
+
+#todo-lists > li > i:nth-child(2) {
+    cursor: pointer !important;
+    color: rgb(5, 221, 5);
+    font-size: 1.2em;
+    padding-left: 8px;
 }
